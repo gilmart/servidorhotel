@@ -93,8 +93,8 @@ export class ControladorHabitacion{
             await objetoServicioHabitacion.editarHabitacion(id,datosHabitacion) 
             
             response.status(200).json({
-                "mensaje":"exito en editando la habitacion" +id,
-                "datos": null,
+                "mensaje":"exito en editando la habitacion " +datosHabitacion,
+                "datos": true,
             })
         }catch(error){
             response.status(400).json({
